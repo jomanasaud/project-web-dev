@@ -1,3 +1,4 @@
+/* here is th style of (home page , news page , account page ,customer service)*/
 *{
 	margin: 0;
 	padding: 0;
@@ -68,7 +69,7 @@ header{
 	transform: translateY(-4px);
 	color: var(--main-color);
 }
-#menu-icon{
+/*#menu-icon{
 	height: 30px;
 	width: 30px;
 	background: var(--text-color);
@@ -81,7 +82,7 @@ header{
 	z-index: 10001;
 	cursor: pointer;
 	display: none;
-}
+}*/
 
 section{
 	padding: 60px 14% 70px;
@@ -221,7 +222,7 @@ section{
 	padding: 12px;
 	border-radius: 30px;
 }
-/*account page*/
+/*account page style*/
 .mainbx{
 	height: 80%;
 	width: 60%;
@@ -308,8 +309,6 @@ span{
 #register{
 	left: 450px;
 }
-
-/*shop page Style*/
 /*news page style*/
 .banner1{
 	margin-top: 100px;
@@ -409,7 +408,7 @@ span{
 	}
 }
 @media (max-width: 920px){
-	#menu-icon{
+	/*#menu-icon{
 		display: block;
 		height: 30px;
 	    width: 30px;
@@ -421,7 +420,7 @@ span{
 	    font-size: 20px;
 	    border-radius: 50%;
 	    cursor: pointer;
-	}
+	}*/
 	.navbar{
 		position: absolute;
 		top: -800px;
