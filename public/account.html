@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+       body{
+        background-image: url(img/backgroung.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    </style>
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---header section--->
+	<header>
+		<a href="#" class="logo">
+			<img src="img/logo.jpg">
+		</a>
+
+		<ul class="navbar">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+
+		<div class="h-icons">
+			<a href="account.html"><i class='bx bx-user' ></i></a>
+			<a href="#"><i class='bx bx-shopping-bag'></i></a>
+			<!--<a href="#"><i class='bx bx-heart' ></i></a>-->
+			<!--<div class="bx bx-menu" id="menu-icon"></div>-->
+		</div>
+	</header>
+   <!--registration section -->
+   <div class="mainbx">
+    <div class="formbx">
+      <div class="btnbx">
+        <div id="btn"></div>
+         <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+         <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <form id="login"class="input-group" method="post" action="/login">
+       <input type="text" class="input-field"placeholder="Username" name="Username" required>
+       <input type="password" class="input-field"placeholder="Enter Password" name="Password"required>
+       <br><br>
+       <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group" method="post" action="/register">
+        <input type="text" class="input-field"placeholder="Username" name="Username" required>
+        <input type="email" class="input-field"placeholder="Email" name="email" required>
+        <input type="password" class="input-field"placeholder="Enter Password" name="Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & condition</span>
+        <button type="submit" class="submit-btn">Register</button>
+       </form>
+       
+    </div>
+     
+   </div>
+
+	<!---custom js link--->
+	<script src="script.js"></script> 
+   
+
+</body>
+ 
+</html>
